@@ -2,18 +2,6 @@ class SimpleDate {
   int day;
   int month;
   int year;
-
-  printDate() {
-    print(getDate());
-  }
-
-  getDate() {
-    return '$day/$month/$year';
-  }
-
-  String toString() {
-    return getDate();
-  }
 }
 
 main() {
@@ -31,27 +19,4 @@ main() {
   print('Start Date: ${startDate.day}/${startDate.month}/${startDate.year}');
   print('End Date: ${endDate.day}/${endDate.month}/${endDate.year}');
   print('---');
-
-  // Delegando ao objeto a impressão da data completa
-  print('Print Start Date:');
-  startDate.printDate();
-  print('Print End Date:');
-  endDate.printDate();
-  print('---');
-
-  // Obtendo a data completa a partir do objeto
-  String start = startDate.getDate();
-  String end = endDate.getDate();
-  print('Start Date: $start');
-  print('End Date: $end');
-  print('---');
-
-  // Imprimindo o retorno do método de obter data
-  print('Start Date: ${startDate.getDate()}');
-  print('End Date: ${endDate.getDate()}');
-  print('---');
-
-  // Imprimindo o objeto de forma direta
-  print('Start Date: ${startDate}');
-  print('End Date: ${endDate}');
 }
